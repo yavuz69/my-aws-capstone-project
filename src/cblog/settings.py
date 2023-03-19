@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'cblog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-db_endpoint = open("/home/ec2-user/dbserver.endpoint", 'r', encoding='UTF-8')
+db_endpoint = open("/home/ubuntu/dbserver.endpoint", 'r', encoding='UTF-8')
 
 DATABASES = {
     'default': {
