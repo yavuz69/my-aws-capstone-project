@@ -82,7 +82,6 @@ WSGI_APPLICATION = 'cblog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-db_endpoint = open("/home/ubuntu/dbserver.endpoint", 'r', encoding='UTF-8')
 
 DATABASES = {
     'default': {
@@ -90,7 +89,7 @@ DATABASES = {
         'NAME': 'database1', # database name in RDS is written here
         'USER': 'admin', # database master username in RDS is written here
         'PASSWORD': config('PASSWORD'),
-        'HOST': db_endpoint.readline().strip() ,  # database endpoint is written here
+        'HOST': 'database endpoint is written here' ,  # database endpoint is written here
         'PORT': '3306' # database port is written here
     }
 }
